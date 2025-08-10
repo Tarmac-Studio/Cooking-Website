@@ -192,7 +192,7 @@ const Home: React.FC = () => {
       )}
 
       {/* Social Links */}
-      <div className="sticky bottom-0 z-30 flex justify-center pb-6 bg-black bg-opacity-80">
+      <footer className="sticky bottom-0 z-40 flex justify-center pb-8 sm:pb-10 md:pb-14 ">
         <div className="flex gap-x-4 sm:gap-x-6 md:gap-x-8 lg:gap-x-10">
           {socials.map(({ icon, link, alt }, idx) => (
             <a
@@ -210,7 +210,7 @@ const Home: React.FC = () => {
             </a>
           ))}
         </div>
-      </div>
+      </footer>
     </div>
   );
 };
