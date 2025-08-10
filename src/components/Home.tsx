@@ -49,7 +49,7 @@ const Home: React.FC = () => {
 
   return (
     <div
-      className="h-screen relative overflow-hidden bg-center flex flex-col"
+      className="min-h-screen relative overflow-hidden bg-center flex flex-col"
       style={{
         backgroundImage: `url(${assets.background})`,
         backgroundSize: "contain",
@@ -81,7 +81,8 @@ const Home: React.FC = () => {
       </div>
 
       {!isExpanded ? (
-        /* INITIAL STATE */ <div className="relative z-20 flex-grow flex flex-col justify-center items-center px-4 sm:px-6 md:px-8 text-center">
+        /* INITIAL STATE */
+        <div className="relative z-20 flex-1 flex items-center justify-center px-4 sm:px-6 md:px-8 py-10 text-center">
           {services.map((service, index) => (
             <ServiceBubble key={index} {...service} />
           ))}
@@ -191,7 +192,7 @@ const Home: React.FC = () => {
       )}
 
       {/* Social Links */}
-      <footer className="fixed bottom-0 left-0 w-full z-20 sm:pb-10 pb-5 flex justify-center py-4">
+      <div className="relative z-20 flex justify-center pb-8 sm:pb-10 md:pb-14 flex-shrink-0">
         <div className="flex gap-x-4 sm:gap-x-6 md:gap-x-8 lg:gap-x-10">
           {socials.map(({ icon, link, alt }, idx) => (
             <a
@@ -209,7 +210,7 @@ const Home: React.FC = () => {
             </a>
           ))}
         </div>
-      </footer>
+      </div>
     </div>
   );
 };
