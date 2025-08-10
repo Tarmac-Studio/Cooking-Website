@@ -140,7 +140,6 @@ const Home: React.FC = () => {
                     Great things take time — we're prepping a fresh digital
                     experience that brings bold ideas to life.
                   </p>
-
                   {/* Form container */}
                   <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 max-w-md sm:max-w-none mx-auto lg:mx-0">
                     {/* Email input */}
