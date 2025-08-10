@@ -49,7 +49,7 @@ const Home: React.FC = () => {
 
   return (
     <div
-      className="min-h-screen relative overflow-hidden bg-center flex flex-col"
+      className="h-screen relative overflow-hidden bg-center flex flex-col"
       style={{
         backgroundImage: `url(${assets.background})`,
         backgroundSize: "contain",
